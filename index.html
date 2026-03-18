@@ -1,1 +1,297 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ミヤ | 身体感覚とセルフケアの案内</title>
+  <meta name="description" content="身体感覚、セルフケア、呼吸、緊張、感覚の受け取り方に関する記事や相談窓口をまとめています。" />
+  <style>
+    :root {
+      --bg: #fffafc;
+      --card: #ffffff;
+      --line: #eadfe5;
+      --text: #2d2430;
+      --sub: #6d5f68;
+      --accent: #b86b8c;
+      --accent-soft: #f7e7ee;
+      --shadow: 0 12px 30px rgba(72, 34, 53, 0.08);
+      --radius: 20px;
+      --max: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top, #fff2f7 0%, var(--bg) 45%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+      padding: 28px 0 56px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 28px 22px;
+      margin-bottom: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      line-height: 1.25;
+      margin: 0 0 10px;
+      letter-spacing: 0.01em;
+    }
+
+    .lead {
+      font-size: 15px;
+      color: var(--sub);
+      margin: 0;
+    }
+
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      padding: 20px 18px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .muted {
+      color: var(--sub);
+    }
+
+    .link-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .link-item {
+      display: block;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .link-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(72, 34, 53, 0.08);
+      border-color: #dfc4d0;
+    }
+
+    .link-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .link-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .arrow {
+      color: var(--accent);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .link-desc {
+      font-size: 14px;
+      color: var(--sub);
+    }
+
+    .note-box {
+      margin-top: 14px;
+      padding: 14px 15px;
+      border-radius: 16px;
+      background: #fff8fb;
+      border: 1px solid #f0dbe5;
+      font-size: 14px;
+      color: #705764;
+    }
+
+    .profile {
+      display: grid;
+      gap: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #8a7b83;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 700px) {
+      .hero {
+        padding: 34px 30px;
+      }
+
+      .card {
+        padding: 24px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">Body Awareness Guide</div>
+      <h1>身体感覚を、もう少しわかりやすく。</h1>
+      <p class="lead">
+        呼吸、緊張、力み、感覚の受け取り方。<br>
+        身体の反応をやさしく整理するための記事や案内をまとめています。
+      </p>
+    </section>
+
+    <div class="stack">
+      <section class="card">
+        <h2>はじめて読む人へ</h2>
+        <p class="muted">
+          何から読めばいいかわからない人向けに、入口になりやすいものを先に置いています。
+          リンク集というより、迷子防止用の地図です。人類はすぐ迷うので。
+        </p>
+
+        <div class="link-list">
+          <a class="link-item" href="https://note.com/miyaaromassage" target="_blank" rel="noopener noreferrer">
+            <div class="link-top">
+              <span class="link-title">note</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">記事一覧。身体感覚、セルフケア、感覚の整え方をまとめています。</div>
+          </a>
+
+          <a class="link-item" href="#consultation">
+            <div class="link-top">
+              <span class="link-title">相談について</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">相談の前に見ておくと流れがわかりやすい案内です。</div>
+          </a>
+
+          <a class="link-item" href="https://x.com/miyaaromassage" target="_blank" rel="noopener noreferrer">
+            <div class="link-top">
+              <span class="link-title">X / 投稿</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">短めの発信や更新情報はこちら。</div>
+          </a>
+
+          <a class="link-item" href="https://www.threads.net/@miyaaromassage" target="_blank" rel="noopener noreferrer">
+            <div class="link-top">
+              <span class="link-title">Threads</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">日々の気づきややわらかめの投稿はこちら。</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>このページで扱っていること</h2>
+        <div class="profile muted">
+          <p>・呼吸や緊張と身体感覚のつながり</p>
+          <p>・力みや思考過多で感覚が入りにくい状態の整理</p>
+          <p>・セルフケアや感覚の見方を言葉にすること</p>
+          <p>・記事や発信の入口をわかりやすくまとめること</p>
+        </div>
+        <div class="note-box">
+          医療行為や診断を行うページではありません。身体の状態に不安がある場合は、必要に応じて医療機関など専門先を利用してください。
+        </div>
+      </section>
+
+      <section class="card" id="consultation">
+        <h2>相談について</h2>
+        <p class="muted">
+          記事を読んだ上で、もっと自分の状態に近い形で整理したい人向けの窓口です。
+          いきなり結論を急ぐというより、今どこでつまずいているかを言語化していくイメージです。
+        </p>
+
+        <div class="link-list">
+          <a class="link-item" href="mailto:yourmail@example.com">
+            <div class="link-top">
+              <span class="link-title">メールで問い合わせる</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">相談内容の概要や質問を送りたい方向け。</div>
+          </a>
+
+          <a class="link-item" href="https://forms.gle/xxxxxxxxxxxx" target="_blank" rel="noopener noreferrer">
+            <div class="link-top">
+              <span class="link-title">問い合わせフォーム</span>
+              <span class="arrow">→</span>
+            </div>
+            <div class="link-desc">必要事項を整理して送りたい方向け。</div>
+          </a>
+        </div>
+
+        <div class="note-box">
+          返信に時間がかかる場合があります。本文では、現在の状態や困っていることをざっくりでいいので書いてもらえると助かります。
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>プロフィール</h2>
+        <p class="muted">
+          身体感覚や反応のズレを、感覚だけでなく構造でも整理したい人に向けて発信しています。
+          雰囲気で片づけず、でも説明っぽくしすぎず、その間をちゃんと拾いたいタイプです。
+        </p>
+      </section>
+    </div>
+
+    <div class="footer">
+      © 2026 Mya. All rights reserved.
+    </div>
+  </main>
+</body>
+</html>
 
